@@ -16,6 +16,11 @@ public class extra {
 
         if (nbVentes >= quota) {
             salaire = salaire + prime; 
+            System.out.println("Félicitations! Vous avez rempli le quota");
+        }    
+        else {
+            int venteNecessaire = quota - nbVentes;
+            System.out.println("Il vous manque "+ venteNecessaire +" ventes pour atteindre le quota.");
         }
         System.out.println("Votre salaire est de: "+ salaire);
     }
